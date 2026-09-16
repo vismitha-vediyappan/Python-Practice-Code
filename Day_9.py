@@ -70,8 +70,6 @@ match operator :
    case _ :
       print("invalid operator")
 
-
-
 #19.display the day name using match case
 day = int(input("enter the day no:"))
 match day :
