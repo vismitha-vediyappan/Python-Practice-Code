@@ -1,46 +1,22 @@
-#44.Right triangle
-for i in range(1,6):
-    for j in range(i):
-        print("*", end="")
-    print()
+#Scope
+#34.Demonstrate a local variable
+def create ():
+    a = 10
+    b = 20
+    return a + b
+print(create())
 
-#45.reverse triangle
-for i in range (5,0,-1):
-    for j in range (i):
-        print("*",end ="")
-    print()
+#35.Demonstrate a global variable
+a = 10
+b = 20
+def add ():
+    return a + b
+print(add())
 
-#46.number triangle
-for i in range(1,6):
-    for j in range(1, i + 1):
-        print(j, end="")
-    print()
-
-#47.number triangle
-for i in range(1,6):
-    for j in range(i):
-        print(i, end="")
-    print()
-
-#48.square pattern
-for i in range (1,6):
-    for j in range (5):
-        print("*",end="")
-    print()
-
-#49.Right-aligned triangle
-for i in range (1,6):
-    for j in range(5-i):
-        print(" ",end="")
-
-    for j in range (i):
-        print("*",end ="")
-    print()
-
-#50. Continuous Number Triangle
-number = 1
-for i in range (1,5):
-    for j in range (i):
-        print(number,end="")
-        number = number + 1
-    print()
+#36.Modify a global variable using global
+a = 5000
+def balance ():
+    global a
+    a = a + 2000
+    return a
+print(balance())
